@@ -1,0 +1,19 @@
+info:
+  name: delete
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: "{{base_url}}/items/:id"
+  params:
+    - name: id
+      value: "1773198803040"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
